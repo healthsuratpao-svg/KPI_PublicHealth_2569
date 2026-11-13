@@ -16,7 +16,7 @@ h1,h2,h3,.num{font-family:Prompt,Sarabun,Tahoma,sans-serif;margin:0}
 .hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:34px 0 40px;position:relative;overflow:hidden}
 .hero svg.wave{position:absolute;right:-40px;bottom:-30px;opacity:.12;width:520px}
 .hero h1{font-size:clamp(21px,3.9vw,40px);font-weight:700;line-height:1.25}
-.by{display:inline-block;font-size:clamp(12px,1.5vw,15px);font-weight:600;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:5px 16px;border-radius:14px;margin-top:12px;line-height:1.4}
+.by{display:inline-block;font-size:clamp(12px,1.5vw,15px);font-weight:600;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:5px 16px;border-radius:14px;margin-top:12px;line-height:1.4}.asof{margin-top:12px;font-size:clamp(11px,1.2vw,13px);opacity:.85;line-height:1.4}
 .hero p{margin:10px 0 0;opacity:.88;font-size:clamp(13px,1.5vw,16px)}@media(min-width:900px){.hero h1,.hero p{white-space:nowrap}}
 .facts{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 26px}
 .fact{background:rgba(255,255,255,.12);border-radius:12px;padding:8px 14px}.fact b{font-family:Prompt;font-size:22px;display:block;line-height:1.2}.fact span{font-size:13px;opacity:.85}
@@ -104,7 +104,8 @@ nav a[aria-current]{background:var(--c1);color:#fff}
 <div class="wrap"><h1>ตัวชี้วัดระดับกองสาธารณสุข อบจ.สุราษฎร์ธานี</h1>
 <p>ผลการดำเนินงานของ รพ.สต. 99 แห่ง เทียบเป้าหมายปีงบประมาณ 2569 แยกรายหน่วยบริการ รายอำเภอ และภาพรวมของกองสาธารณสุข</p>
 <div class="by">จัดทำโดยฝ่ายบริการสาธารณสุข กองสาธารณสุข องค์การบริหารส่วนจังหวัดสุราษฎร์ธานี</div>
-<div class="facts" id="facts"></div><div class="gauges" id="hg"></div></div></header>
+
+<div class="facts" id="facts"></div><div class="gauges" id="hg"></div><div class="asof">ข้อมูล ณ วันที่ 10 พฤศจิกายน 2569</div></div></header>
 <nav><div class="wrap"><a href="#overview">ภาพรวมรายอำเภอ</a><a href="#i1">ผู้สูงอายุ 9 ด้าน</a><a href="#i2">ADL</a><a href="#i3">เบาหวาน/ความดัน</a><a href="#find">ค้นหาหน่วยบริการ</a><span class="sp"></span><span class="fyb">เป้าหมายปีงบประมาณ 2569</span><button class="chip" id="tm" type="button" aria-label="สลับโหมดสว่าง/มืด"></button><button class="chip" id="xpdf" type="button">📄 ส่งออก PDF</button></div></nav>
 <main>
 <section id="overview"><div class="wrap"><h2>ภาพรวมรายอำเภอ</h2><p class="lead">สีของช่องบอกสถานะเทียบกับเป้าหมาย เขียว = ถึงเป้า, เหลือง = ต่ำกว่าเป้าไม่เกิน 10 จุด, แดง = ต่ำกว่าเป้ามากกว่า 10 จุด คลิกชื่ออำเภอเพื่อดูรายหน่วยบริการ</p><div class="card" style="overflow-x:auto"><table class="heat" id="heat"></table></div></div></section>
